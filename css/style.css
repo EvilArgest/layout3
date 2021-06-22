@@ -57,6 +57,7 @@ body{
     letter-spacing: normal;
     line-height: 46px;
     text-decoration: underline;
+    text-decoration-width: 2px;
     text-decoration-style: dashed;
 }
 /*   MENU   */
