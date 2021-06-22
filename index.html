@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <title>Maket3</title>
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
-    <link href="js/jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/stabilize.css" rel="stylesheet">
+    <link href="css/feedback.css" rel="stylesheet">
     <link href="css/slider.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=PT+Sans&display=swap" rel="stylesheet">
@@ -22,6 +21,7 @@
         <p class="header__text">+7(449) 777-77-77 +7(499) 777-77-77 <span class="feedback">Обратная связь</span></p>
     </div>
 </div>
+
 <!--ЦЕ МЕНЮШКА-->
 <div class="container__2">
     <div class="menu">
@@ -36,8 +36,26 @@
         </div>
     </div>
 </div>
-
-
+<!--FEEEEEEDBACK-->
+    <div class="feedbackform">
+        <div class="feedbackform__content">
+        <div class="little__square">
+            <span class="close">&times;</span>
+        </div>
+            <form action="">
+        <p class="form__title">Обратная связь</p>
+        <p class="little__text">Ваше имя *</p>
+                    <input name="textinput" type="text" class="class__input" pattern="[a-zA-ZА-Яа-яҐґЄєІіЇї ]{3,30}" placeholder="Поле обязательно для заполнения" required>
+        <p class="little__text">Телефон *</p>
+        <input name="numberinput" type="text" class="class__input" pattern="[+]{0,1}[0-9]{10,12}" placeholder="Поле обязательно для заполнения" required>
+        <p class="little__text">Email *</p>
+        <input name="emailinput" type="email" class="class__input"  placeholder="Поле обязательно для заполнения" required>
+        <p class="little__text">Сообщение</p>
+        <textarea name="textareainput" class= "itstextarea"></textarea>
+                <button type="submit" class="submit__button"><span class="doit">Отправить</span></button>
+            </form>
+        </div>
+    </div>
 <!--ЦЕ СЛАЙДЕР(НЕ СЛАЙДЕР)-->
     <div class="container__3">
         <div class="slider">
@@ -73,6 +91,7 @@
             </div>
         </div>
     </div>
+
 <!--ЦЕ ФУТЕР-->
     <div class="container__5">
         <div class="footer">

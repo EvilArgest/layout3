@@ -12,3 +12,14 @@ $(document).ready(function(){
         pauseOnDotsHover: false
     });
 });
+
+$(document).ready(function(){
+    $('.feedback').click(function(){
+        $(".feedbackform").fadeIn(2000);
+    });
+});
+$(document).ready(function(){
+    $('.close').click(function(){
+        $(".feedbackform").fadeOut(2000);
+    });
+});

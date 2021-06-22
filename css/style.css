@@ -47,7 +47,17 @@ body{
     margin-left: auto;
 }
 .feedback{
-    margin-left: 0;
+    display: block;
+    margin-left: 75px;
+    color: #767676;
+    font-family: "PT Sans";
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 46px;
+    text-decoration: underline;
+    text-decoration-style: dashed;
 }
 /*   MENU   */
 
@@ -242,7 +252,7 @@ body{
 .ul__list{
     width: 119px;
     color: #ffffff;
-    font-family: "PT Sans";
+    font-family : "PT Sans";
     font-size: 14px;
     font-weight: 400;
     font-style: normal;

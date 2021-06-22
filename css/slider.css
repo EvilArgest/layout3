@@ -42,7 +42,7 @@
 .slider .slick-arrow{
     position: absolute;
     top: 39%;
-    z-index: 10000;
+    z-index: 5000;
     font-size: 0;
     width: 34px;
     height: 58px;
