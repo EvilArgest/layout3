@@ -90,6 +90,7 @@
     width: 339px;
     margin-left: 55px;
     resize: none;
+   padding: 0 10px;
 }
 .submit__button{
     width: 128px;
