@@ -10,6 +10,9 @@
     <link href="css/slider.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=PT+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
 </head>
@@ -40,16 +43,16 @@
     <div class="feedbackform">
         <div class="feedbackform__content">
         <div class="little__square">
-            <span class="close">&times;</span>
+            <img class="close" src="img/krestik.png">
         </div>
             <form action="">
         <p class="form__title">Обратная связь</p>
         <p class="little__text">Ваше имя *</p>
-                    <input name="textinput" type="text" class="class__input" pattern="[a-zA-ZА-Яа-яҐґЄєІіЇї ]{3,30}" placeholder="Поле обязательно для заполнения" required>
+              <input name="textinput" type="text" class="class__input" pattern="[a-zA-ZА-Яа-яҐґЄєІіЇї ]{3,30}" placeholder="Поле обязательно для заполнения" required>
         <p class="little__text">Телефон *</p>
-        <input name="numberinput" type="text" class="class__input" pattern="[+]{0,1}[0-9]{10,12}" placeholder="Поле обязательно для заполнения" required>
+              <input name="numberinput" type="text" class="class__input" pattern="[+]{0,1}[0-9]{10,12}" placeholder="Поле обязательно для заполнения" required>
         <p class="little__text">Email *</p>
-        <input name="emailinput" type="email" class="class__input"  placeholder="Поле обязательно для заполнения" required>
+              <input name="emailinput" type="email" class="class__input" placeholder="Поле обязательно для заполнения"  required>
         <p class="little__text">Сообщение</p>
         <textarea name="textareainput" class= "itstextarea"></textarea>
                 <button type="submit" class="submit__button"><span class="doit">Отправить</span></button>
@@ -70,25 +73,90 @@
 
 <!--ЦЕ МЕЙН-->
     <div class="container__4">
+      <div class="div__for__breadcrumb">
+        <p class="breadcrumb"><span class="bread__underline">Главная</span> / &nbsp; <span class="bread__underline">Каталог</span>  /&nbsp;   Бытовая техника </p>
+      </div>
         <div class="main">
-            <div class="subdiv">
-            <div class="div__news">
-                <p class="p__title">Новости</p>
-                <div class="div__news__href">
-                    <p class="p__text"><span class="span__block"><a href="#" class="news__title">14 сентября 2013 г.</a></span>Редизайн веб-сайта архитектурного бюро.</p>
-                    <p class="p__text"><span class="span__block"><a href="#" class="news__title">14 сентября 2013 г.</a></span>Раскрутка интернет-магазина декора&shy;тивных стикеров и виниловых наклеек.</p>
-                    <p class="p__text"><span class="span__block"><a href="#" class="news__title">14 сентября 2013 г.</a></span>SEO-продвижение сайта поставщика дизель генераторов.</p>
-                    <p class="p__text"><span class="span__block"><a href="#" class="news__title">14 сентября 2013 г.</a></span>Поисковое продвижение веб-сайта поставщика гидрооборудования.</p>
-                    <p class="div__archive"><a href="#" class="class__archive">Архив новостей</a></p>
+          <div class="catalog">
+                <ul class="ul__left">
+                  <li>Автомобили</li>
+                  <li class="li__dropdown"><span class="for__underline">Бытовая техника</span>
+                      <ul class="ul__none">
+                        <li>Микроволновки</li>
+                        <li>Холодильники</li>
+                        <li>Посудомоечные машины</li>
+                        <li>Чайники</li>
+                      </ul>
+                  </li>
+                  <li>Мобильная техника</li>
+                  <li>Компьютеры</li>
+                  <li>Одежда</li>
+                  <li>Недвижимость</li>
+                </ul>
+            <img src="img/xxx.png" class="xxx__img" alt="Please give back that image!">
+            <p class="price__list">Прайс-лист</p>
+          </div>
+          <div class="content">
+            <div class="grid">
+              <div class="no__photo">
+                <img class="img__nophoto" src="img/nophoto.png" alt="Where is the photo?">
+                <p class="teapot">Самый клевый чайник, который надо купить!</p>
+                <div class="div__bottom">
+                  <p class="price"><a href="#">1 900 р.</a></p>
+                  <div class="for__image">
+                  <a href="#"><img class="img__cart" src="img/cart.png" alt="Image has gone"></a>
+                  </div>
                 </div>
+              </div>
+              <div class="no__photo">
+                <img class="img__nophoto" src="img/nophoto.png" alt="Where is the photo?">
+                <p class="teapot">Самый клевый чайник, который надо купить!</p>
+                <div class="div__bottom">
+                  <p class="price"><a href="#">1 900 р.</a></p>
+                  <div class="for__image">
+                    <a href="#"><img class="img__cart" src="img/cart.png" alt="Image has gone"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="no__photo">
+                <img class="img__nophoto" src="img/nophoto.png" alt="Where is the photo?">
+                <p class="teapot">Самый клевый чайник, который надо купить!</p>
+                <div class="div__bottom">
+                  <p class="price"><a href="#">1 900 р.</a></p>
+                  <div class="for__image">
+                    <a href="#"><img class="img__cart" src="img/cart.png" alt="Image has gone"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="no__photo">
+                <img class="img__nophoto" src="img/nophoto.png" alt="Where is the photo?">
+                <p class="teapot">Самый клевый чайник, который надо купить!</p>
+                <div class="div__bottom">
+                  <p class="price"><a href="#">1 900 р.</a></p>
+                  <div class="for__image">
+                    <a href="#"><img class="img__cart" src="img/cart.png" alt="Image has gone"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="no__photo">
+                <img class="img__nophoto" src="img/nophoto.png" alt="Where is the photo?">
+                <p class="teapot">Самый клевый чайник, который надо купить!</p>
+                <div class="div__bottom">
+                  <p class="price"><a href="#">1 900 р.</a></p>
+                  <div class="for__image">
+                    <a href="#"><img class="img__cart" src="img/cart.png" alt="Image has gone"></a>
+                  </div>
+                </div>
+              </div>
             </div>
+            <p class="ciferki"><span>1</span> <span>2</span> <span class="triyka">3</span> <span>4</span> <span>5</span> <span>6</span> <span>7</span></p>
+            <div class="line"></div>
+            <div class="two__ps">
+              <p class="two">Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в разработке более чем 700 сайтов, поэтому можем уверенно называть себя профессионалами. На данный момент наш коллектив состоит из более чем 30 сотрудников работающих в двух офисах в Москве и Зеленограде.характерные для этого жанра мотивы: неразделённой любви, ухода молодости, угасания души. </p>
+              <p class="two">Одним из основных направлений работ нашей компании является поисковое продвижение сайтов, на данной момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000 поисковым запросам. При этом в работе основной акцент мы делаем на каче&shy;стве работ, а так же применяем собственные уникальные разработки в области SEO продвижения. На данный момент отдел SEO состоит из 9 человек под руковод&shy;ством ведущего специалиста, преимущественно работа&shy;ющих в нашем московском офисе.</p>
             </div>
-            <div class="div__pixel__plus">
-                <p class="p__company">Компания «Пиксель Плюс»</p>
-                <p class="p__company__text">Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в разработке более чем 700 сайтов, поэтому можем уверенно называть себя професси&shy; оналами. На данный момент наш коллектив состоит из более чем 30 сотрудников рабо&shy;тающих в двух офисах в Москве и Зеленограде.</p>
-                <p class="p__company__text">Одним из основных направлений работ нашей компании является поисковое продви&shy;жение сайтов, на данной момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000 поисковым запросам. При этом в работе основной акцент мы делаем на качестве работ, а так же применяем собственные уникальные разработки в области SEO продвижения. На данный момент отдел SEO состоит из 9 человек под руководством ведущего специалиста, преимущественно работающих в нашем москов&shy;ском офисе.</p>
-                <p class="p__company__text">Наша компания является золотым сертифицированным партнёром «1С-Битрикс» (сер&shy;тификат № 33939 с 2007 по 2013), что ещё раз подтверждает квалификацию наших сотрудников. В январе 2013 мы стали лидерами продаж продуктов «1С-Битрикс» и вошли в число лучших разработчиков сайтов России. Все специалисты занимающиеся изготовлением сайтов проходят обязательную сертификацию «1С-Битрикс» в течении первых 6 месяцев работы в компании, после чего продолжают непрерывно поддержи&shy;вать и развивать свои профессиональные навыки.</p>
-            </div>
+          </div>
+          </div>
         </div>
     </div>
 

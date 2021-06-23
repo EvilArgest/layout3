@@ -47,8 +47,9 @@ body{
     margin-left: auto;
 }
 .feedback{
-    display: block;
-    margin-left: 75px;
+    position: relative;
+    top:-12px;
+    margin-left: 80px;
     color: #767676;
     font-family: "PT Sans";
     font-size: 24px;
@@ -56,9 +57,7 @@ body{
     font-style: normal;
     letter-spacing: normal;
     line-height: 46px;
-    text-decoration: underline;
-    text-decoration-width: 2px;
-    text-decoration-style: dashed;
+    border-bottom: 2px dashed;
 }
 /*   MENU   */
 
@@ -69,13 +68,15 @@ body{
 }
 .menu{
     width: 980px;
-    padding: 25px 10px 25px 10px;
     margin: auto;
 }
-
+.menu li{
+  padding: 25px 5px;
+}
 .menu__ul{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     list-style: none;
     font-family: 'PT Sans';
     font-size: 30px;
@@ -96,7 +97,6 @@ body{
     content: "";
     margin: 0;
 }
-
 /*   SLIDER   */
 
 .container__3{
@@ -111,12 +111,16 @@ body{
     margin: -62px auto 0 auto;
     display: block;
 }
-
 /*   MAIN   */
 
 .container__4{
     width: 100%;
-    margin: 30px auto 195px auto;
+    margin: 10px auto 195px auto;
+}
+.div__for__breadcrumb{
+  width: 980px;
+  padding: 0 10px;
+  margin: 0 auto;
 }
 .main{
     width: 980px;
@@ -125,101 +129,182 @@ body{
     display: flex;
     flex-direction: row;
 }
-.subdiv{
-    width: 350px;
+.breadcrumb{
+  padding: 0 10px;
+  color: #767676;
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 18px;
+  text-align: left;
 }
-.div__news{
-    background-color: #777777;
-    padding-bottom: 100px;
+.bread__underline{
+  text-decoration: underline;
 }
-.p__title{
-     font-family: 'PT Sans';
-     font-size: 40px;
-     font-weight: 700;
-     font-style: normal;
-     letter-spacing: normal;
-     font-variant: normal;
-     line-height: 46px;
-     color: #ffffff;
-     padding: 22px 0 38px 36px;
- }
-.div__news__href{
-    margin-left: 34px;
-    max-width: 270px;
+.catalog{
+  width: 185px;
+  height: 432px;
+  margin-top: 27px;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
 }
-.p__text{
-     font-family: 'PT Sans';
-     font-size: 14px;
-     line-height: 22px;
-     font-weight: 400;
-     font-style: normal;
-     letter-spacing: 0.025em;
-     color: #ffffff;
-     hyphens: manual;
-     margin-bottom: 30px;
-     display: block;
- }
-.span__block{
+.ul__left{
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  color: #767676;
+  line-height: 30px;
+  letter-spacing: 0.45px;
+}
+.ul__none{
+  display: none;
+  font-size: 14px;
+  font-style: normal;
+  letter-spacing: 0.35px;
+  line-height: 22px;
+}
+.ul__none{
+  text-decoration: none;
+}
+.li__dropdown:hover .for__underline{
+    text-decoration: underline;
+}
+.li__dropdown:hover .ul__none{
     display: block;
+    list-style: disc;
+    margin-left: 23px;
 }
-.news__title{
-    text-decoration: none;
-    color:white;
+.ul__none li:hover {
+  text-decoration: underline;
+  font-weight: bold;
 }
-.news__title{
-    text-decoration: none;
-}
-.class__archive{
-    text-decoration: underline;
-    color:white;
-}
-.p__text:last-child{
-    margin-bottom: 36px;
-}
-.div__archive{
-    text-decoration: underline;
-    text-align: right;
-    font-family: 'PT Sans';
-    font-size: 14px;
-    line-height: 22px;
+/*Content part*/
+  .xxx__img{
+    width: 97px;
+    height: 111px;
+    margin-top: 105px;
+    margin-left: 43px;
+  }
+  .price__list{
+    color: #444444;
+    font-family: "PT Sans";
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 25px;
+    text-align: center;
+    margin: 6px 0 0 15px;
+  }
+  .content{
+    margin-left: auto;
+    width: 780px;
+    margin-top: 27px;
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+  }
+  .second__two{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  .no__photo{
+    width: 250px;
+    height: 380px;
+    background-color: #dcdcdc;
+  }
+  .img__nophoto{
+    width: 210px;
+    height: 209px;
+    margin: 20px 20px 0 20px;
+  }
+  .teapot{
+    color: #767676;
+    font-family: "PT Sans";
+    font-size: 18px;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: 0.025em;
-    color: #ffffff;
-}
-.div__news span{
-    font-family: 'PT Sans';
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 400;
-    font-style: italic;
-    letter-spacing: 0.025em;
-    color: #ffffff;
-}
-.div__pixel__plus{
-    margin: 20px 0 0 59px;
-    width: 569px;
-}
-.p__company{
-    font-family: 'PT Sans';
-    font-size: 40px;
-    line-height: 22px;
-    font-weight: 400;
-    letter-spacing: 0.025em;
+    letter-spacing: normal;
+    line-height: 18px;
+    width: 188px;
+    margin: 20px 0 0 20px;
+  }
+  .div__bottom{
+    display: flex;
+    flex-direction: row;
+  }
+  .price{
+    color: #444444;
+    font-family: "PT Sans";
+    font-size: 28px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 18px;
+    margin: 55px 0 0 22px;
+  }
+  .for__image{
+    margin-top: 57px;
+    margin-left: 65px;
+  }
+  .img__cart{
+    width: 28px;
+    height: 21px;
+  }
+  .ciferki{
+    margin-top: 32px;
     color: #767676;
-    padding-bottom: 35px;
-}
-.p__company__text{
-    margin-bottom: 33px;
     font-family: "PT Sans";
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: normal;
     line-height: 22px;
-    max-width: 545px;
+    text-align: center;
+    letter-spacing: 7.91px;
+  }
+  .triyka{
+    color: #444444;
+    font-size: 18px;
+    font-style: normal;
+    letter-spacing: 10.17px;
+    line-height: normal;
+  }
+  .line{
+    height: 1px;
+    width: 100%;
+    background-color: #777777;
+    margin-top: 67px;
+  }
+  .two__ps{
+    margin-top: 29px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .two{
+    width: 372px;
+    color: #767676;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 22px;
     text-align: left;
+    letter-spacing: 0.35px;
+  }
+.grid a{
+  text-decoration: none;
+  color: #444444;
 }
+
 /*   FOOTER   */
 
 .container__5{
@@ -293,4 +378,15 @@ body{
     font-style: normal;
     letter-spacing: normal;
     line-height: 22px;
+}
+.div__archive{
+  text-decoration: underline;
+  text-align: right;
+  font-family: 'PT Sans';
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.025em;
+  color: #ffffff;
 }

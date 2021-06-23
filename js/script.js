@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('.slider').slick({
         arrows:true,
-        speed: 1000,
+        speed: 800,
         autoplay: true,
         infinite: true,
         autoplaySpeed: 4000,
@@ -12,14 +12,14 @@ $(document).ready(function(){
         pauseOnDotsHover: false
     });
 });
-
 $(document).ready(function(){
     $('.feedback').click(function(){
-        $(".feedbackform").fadeIn(2000);
+        $(".feedbackform").fadeIn(1000);
     });
 });
 $(document).ready(function(){
     $('.close').click(function(){
-        $(".feedbackform").fadeOut(2000);
+        $(".feedbackform").fadeOut(1000);
     });
 });
+

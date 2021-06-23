@@ -30,10 +30,9 @@
     top: -27px;
 }
 .close{
-    color: white;
-    padding-bottom: 10px;
-    font-size: 33px;
-    padding-left: 4px;
+    width: 15px;
+    height: 15px;
+    margin: 6px 0 0 6px;
 }
 .close:hover{
     cursor: pointer;
@@ -69,13 +68,28 @@
 }
 .class__input{
     width: 339px;
-    height: 40px;
     margin-left: 55px;
+    padding: 11px 10px;
+}
+::placeholder{
+  color: transparent;
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-style: italic;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+}
+.class__input:focus::placeholder{
+    color: #dc7f7f;
+    align-content: center;
+    align-items: center;
 }
 .itstextarea{
     height: 140px;
     width: 339px;
     margin-left: 55px;
+    resize: none;
 }
 .submit__button{
     width: 128px;
@@ -99,13 +113,4 @@
 input:focus:invalid:required{
     box-shadow: inset 0 0 6px red;
     border: red;
-}
-input::placeholder {
-    color: #dc7f7f;
-    font-family: "PT Sans";
-    font-size: 14px;
-    font-style: italic;
-    letter-spacing: normal;
-    line-height: normal;
-    padding-left: 13px;
 }
