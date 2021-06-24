@@ -145,7 +145,7 @@ body{
 }
 .catalog{
   width: 185px;
-  height: 432px;
+  height: 512px;
   margin-top: 27px;
   margin-right: auto;
   display: flex;
@@ -187,7 +187,7 @@ body{
   .xxx__img{
     width: 97px;
     height: 111px;
-    margin-top: 105px;
+    margin-top: auto;
     margin-left: 43px;
   }
   .price__list{
